@@ -1,0 +1,15 @@
+{% extends  "base.html" %}
+{% block content %}
+    <div class="container">
+        <div>
+            <p class="text-anno">Вас приветствует симулятор кота
+            <br>для начало введите имя кота</p>
+        </div>
+        <div>
+            <form action="cat_stats/" method="get">
+                <input type="text" placeholder="Введите имя кота" class="input-txt" name="name">
+                <input type="submit" class="input-submit">
+            </form>
+        </div>
+    </div>
+{% endblock content %}

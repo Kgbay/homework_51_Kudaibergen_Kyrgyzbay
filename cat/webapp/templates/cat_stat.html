@@ -1,0 +1,28 @@
+{% extends  "base.html" %}
+{% block content %}
+<div class="content">
+    <div class="stat-content">
+           <div>
+               <img src="{{ img }}">
+           </div>
+            <div>
+                <p>Кот - {{ name }}</p>
+                <p>Возраст - {{ age }} {{ age_naming }}</p>
+                <p>Уровень счастья - {{ happiness }}</p>
+                <p>Уровень сытости - {{ satiety }}</p>
+                <p>Состояние - {{ state }}</p>
+                <p>Настроение - {{ mood }}</p>
+            </div>
+        </div>
+        <form action="" method="get">
+            <select name="select" class="cat-params-select">
+                <option>Выберите действие</option>
+                <option name="play" value="play">поиграть с котом</option>
+                <option name="feed" value="feed">покормить кота</option>
+                <option name="sleep" value="sleep">улажит кота спать</option>
+            </select>
+            <br>
+            <input type="submit" class="cat-params-input ">
+        </form>
+</div>
+{% endblock content %}
