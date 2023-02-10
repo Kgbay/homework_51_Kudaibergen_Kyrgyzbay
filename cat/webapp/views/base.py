@@ -71,6 +71,7 @@ def cat_stat_view(request: WSGIRequest):
             else:
                 json_data = JsonWriterReader(name, catparams.age, catparams.happiness, catparams.satiety, catparams.get_age_naming())
 
+
     elif select == 'sleep':
         state = 'спит'
         json_data = JsonWriterReader(name, catparams.age, catparams.happiness, catparams.satiety, catparams.get_age_naming())
